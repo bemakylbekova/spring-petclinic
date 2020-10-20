@@ -10,8 +10,8 @@
 
   - name: Clone Repo
     git:
-      repo: https://github.com/ikambarov/spring-petclinic.git
-      dest: /spring
+     repo: https://github.com/ikambarov/spring-petclinic.git
+     dest: /spring
 
   - name: Run Maven Wrapper
     shell: "./mvnw package"
@@ -23,5 +23,3 @@
     shell: 'pkill java & nohup java -jar target/*.jar &'
     args:
       chdir: /spring
-
-
